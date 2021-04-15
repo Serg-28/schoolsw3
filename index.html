@@ -19,13 +19,23 @@
     <button type="button" onclick="light(0)">Свет Выкл</button>
   </p>
   <hr>
-  <!-- Создал форму с двумя полями для ввода -->
+  <!-- Создал форму с двумя полями для ввода и двумя элементами <label></label> -->
   <form>
     <label for="fname">Имя:</label><br>
     <input type="text" id="fname" name="fname"><br>
     <label for="lname">Фамилия:</label><br>
     <input type="text" id="lname" name="lname">
   </form>
-  
+  <hr>
+  <br>
+  <!-- Создал форму с кнопками/переключателями-->
+  <form>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Мужчина</label><br>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Женщина</label><br>
+    <input type="radio" id="other" name="gender" value="other">
+    <label for="other">другое</label>
+  </form>
 </body>
 </html>
