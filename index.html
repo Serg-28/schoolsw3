@@ -19,6 +19,7 @@
     <button type="button" onclick="light(0)">Свет Выкл</button>
   </p>
   <hr>
+  
   <!-- Создал форму с двумя полями для ввода и двумя элементами <label></label> -->
   <form>
     <label for="fname">Имя:</label><br>
@@ -28,6 +29,7 @@
   </form>
   <hr>
   <br>
+
   <!-- Создал форму с кнопками/переключателями-->
   <form>
     <input type="radio" id="male" name="gender" value="male">
@@ -39,6 +41,7 @@
   </form>
   <hr>
   <br>
+
   <!-- Создал форму с кнопкой отправки а так же двумя предустановленными значениями для инпутов (первоначально отобразяться в поле ввода) -->
   <form action="/action_page.php">
     <label for="fname">Имя:</label><br>
@@ -49,6 +52,7 @@
   </form>
   <hr>
   <br>
+
  <!-- Форма с выпадающим списком предустановленным выбором для отображения -->
   <form>
     <select name="cars">
@@ -62,6 +66,7 @@
   </form>
   <hr>
   <br>
+
   <!-- Форма с выпадающим списком установленным количеством вариантов для отображения - 3 шт и возможностью мультивыбора-->
 <form>
   <select name="cars" size="3" multiple>
@@ -70,14 +75,37 @@
     <option value="fiat">Фиат</option>
     <option value="audi">Ауди</option>
   </select>
-  <hr>
-  <br>
-  <!--  Форма с текстовой областью -->
-  <form>
-    <textarea name="message" style="width:200px; height:60px;">
-      Кот играл в саду.
-    </textarea>
-  </form>
 </form>
+<hr>
+<br>
+
+  <!--  Форма с текстовой областью -->
+<form>
+  <textarea name="message" style="width:200px; height:60px;">
+    Кот играл в саду.
+  </textarea>
+</form>
+<hr>
+<br>
+
+<!-- Форма с кнопкой выводящей по нажатию алерт -->
+<form action="">
+  <button type="button" onclick="alert('Hello world')">PUSH THE BOTTON</button>
+</form>
+<hr>
+<br>
+
+<!-- Форма с полем ввода input list  раскрывающимся списоком предопределенных параметров  -->
+<form action="/action_page.php">
+  <input list="browsers">
+  <datalist id="browsers">
+    <option value="Internet Explorer">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+  </datalist>
+</form>
+
 </body>
 </html>
