@@ -108,10 +108,21 @@
 </form>
 <br>
 <hr>
+
+<!-- Форма с типом ввода color, который содержит палитру, где мы можем выбрать цвет  -->
 <form>
   <label for="favcolor">Выберите свой любимый цвет:</label>
   <input style="width: 50px; height: 50px;" type="color" id="favcolor" name="favcolor">
 </form>
+<hr>
+<br>
 
+<!-- Форма с типом ввода дата и атрибутами мин и макс для добовления ограничения дат -->
+<form>
+  <label for="datemax">Введите дату до 1980-01-01:</label>
+  <input type="date" id="datemax" name="datemax" max="1979-12-31"><br><br>
+  <label for="datemin">Введите дату после 2000-01-01:</label>
+  <input type="date" id="datemin" name="datemin" min="2000-01-02">
+</form>
 </body>
 </html>
