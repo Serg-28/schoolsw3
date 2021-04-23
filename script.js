@@ -62,3 +62,12 @@ function makeQuieter () {
 function makeLouder () {
     myVideo.volume = 1;
 }
+// Функция, которая проверяет состояние и воспроизводит либо ставит аудио на паузу.
+let myAudio = document.getElementById("audio1");
+function playPauseAudio(){
+  if(myAudio.paused){
+    myAudio.play();    
+  } else {
+      myAudio.pause();
+  }      
+}

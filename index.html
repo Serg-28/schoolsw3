@@ -231,9 +231,10 @@
 <hr>
 <br>
 
-<!-- Добавим на страницу аудио элемент -->
+<!-- Добавим на страницу аудио элемент с кнопкой Play/Pause которую будет обрабатывать скрипт -->
 <div style="text-align: center;">
-  <audio controls>
+  <button  type="button" onclick="playPauseAudio()">Play/Pause</button>
+  <audio id="audio1" controls>
     <source src="./assets/media/example_MP3_1MG.mp3">  
   </audio>
 </div>
