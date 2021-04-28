@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML from  W3 school</title>
 </head>
-<body>
+<body style="text-align:center">
   <h1>HTML стиль JavaScript</h1>
   <p id="demo">JavaScript может изменить стиль HTML элемента.</p>
   <button type="button" onclick="myFunction()">Нажмите Меня!</button> 
@@ -254,11 +254,11 @@ allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; pic
   зададим дивам два атрибута событий (в данном случае События мыши) - ondrop (срабатывает после того, как перетаскиваемый элемент опустился на объект перетаскивания) и  ondragover(срабатывает, когда элемент перемещают над допустимой зоной для переноса) 
   и укажем,  какой скрипт должен срабатывать при событиn. Более подробно о всех событиях https://basicweb.ru/html/event_att.php. В файле script.js напишем соответствующие функции
 -->
-<div class="div1" style="width: 350px; height: 70px; padding: 10px; border: 1px solid #aaaaaa" ondrop="drop(event)" ondragover="allowDrop(event)">
+<div class="div1" style=" display: inline-block; width: 350px; height: 70px; padding: 10px; border: 1px solid #aaaaaa" ondrop="drop(event)" ondragover="allowDrop(event)">
   
 </div>
 <hr>
-<div class="div2" style="width: 350px; height: 70px; padding: 10px; border: 1px solid #aaaaaa" ondrop="drop(event)" ondragover="allowDrop(event)" >
+<div class="div2" style="display: inline-block; width: 350px; height: 70px; padding: 10px; border: 1px solid #aaaaaa" ondrop="drop(event)" ondragover="allowDrop(event)" >
 
 </div>
 <br>
@@ -266,6 +266,15 @@ allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; pic
   (атрибут ondragstart вызывает функцию из script.js - drag(event) которая определяет, какие данные следует перетаскивать  )
  -->
 <img id="drag1" src="./assets/media/img_logo.gif" alt="" ondragstart="drag(event)" draggable="true" width="336" height="69">
+<br>
+<hr>  
+<br>
+<a style="display: inline-block;" href="./css-tasks.html" target="_blank">
+  <div style="width: 300px;font-size: 34px; height: 100px; background-color: bisque;" >
+    <h2 style="color: black;">CSS Task</h2>
+  </div>
+</a>
+
 <script src="script.js"></script>  
 
 </body>
