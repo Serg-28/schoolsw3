@@ -1,0 +1,9 @@
+/* Добавим стилей для дива с класом body и укажем, что изображение должно быть зафиксировано background-attachment: fixed; */
+.body {
+  padding-top: 20px;  
+  padding-right: 200px;
+  background-image: url("./assets/css/img_tree.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-attachment: fixed;
+}
