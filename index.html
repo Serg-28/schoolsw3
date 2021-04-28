@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML from  W3 school</title>
 </head>
-<body>
+<body style="text-align:center">
   <h1>HTML стиль JavaScript</h1>
   <p id="demo">JavaScript может изменить стиль HTML элемента.</p>
   <button type="button" onclick="myFunction()">Нажмите Меня!</button> 
@@ -238,6 +238,42 @@
     <source src="./assets/media/example_MP3_1MG.mp3">  
   </audio>
 </div>
+<hr>
+<br>
+
+<!-- Добавим на страницу видео с ютуба через тег ifram (на ютубе выбрать -поделиться- встроить видео), в конце адреса ставим знак вопроса и добавляем следующие параметры autoplay=1&mute=1&loop=1 которые означают, 
+  что видео начнет воспроизводиться автоматически, без звука и будет проигрываться по кругу, ОДНАКО В ДАННОМ ПРИМЕРЕ МЫ ВСЕ ЖЕ ОТКЛЮЧИМ АУТОПЛЕЙ ПОСТАВИВ ЗНАЧЕНИЕ =0(НОЛЬ) ЧТО БЫ КАЖДЫЙ РАЗ НЕ ЗАГРУЖАТЬ ВИДЕО  -->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/IWTvgZVWeB4?autoplay=0&mute=1&loop=1" title="YouTube video player" frameborder="0" 
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<hr>
+<br>
+
+<!-- HTML API (APPLICATION PROGRAMMING INTERFACE -ПРОГРАММНЫЙ ИНТЕРФЕЙС ПРИЛОЖЕНИЯ) -->
+
+<!-- Реализуем возможность перетаскивания изображения из одной области в другую. Сперва создаем два дива (в любой из них можем перетаскивать) и один img, который и будем тащить
+  зададим дивам два атрибута событий (в данном случае События мыши) - ondrop (срабатывает после того, как перетаскиваемый элемент опустился на объект перетаскивания) и  ondragover(срабатывает, когда элемент перемещают над допустимой зоной для переноса) 
+  и укажем,  какой скрипт должен срабатывать при событиn. Более подробно о всех событиях https://basicweb.ru/html/event_att.php. В файле script.js напишем соответствующие функции
+-->
+<div class="div1" style=" display: inline-block; width: 350px; height: 70px; padding: 10px; border: 1px solid #aaaaaa" ondrop="drop(event)" ondragover="allowDrop(event)">
+  
+</div>
+<hr>
+<div class="div2" style="display: inline-block; width: 350px; height: 70px; padding: 10px; border: 1px solid #aaaaaa" ondrop="drop(event)" ondragover="allowDrop(event)" >
+
+</div>
+<br>
+<!-- Создадим картинку и установим  её атрибут draggable в "true", указав таким образом, что мы разрешаем её перетаскивание, Затем укажите, что должно произойти при перетаскивании элемента
+  (атрибут ondragstart вызывает функцию из script.js - drag(event) которая определяет, какие данные следует перетаскивать  )
+ -->
+<img id="drag1" src="./assets/media/img_logo.gif" alt="" ondragstart="drag(event)" draggable="true" width="336" height="69">
+<br>
+<hr>  
+<br>
+<a style="display: inline-block;" href="./css-tasks.html" target="_blank">
+  <div style="width: 300px;font-size: 34px; height: 100px; background-color: bisque;" >
+    <h2 style="color: black;">CSS Task</h2>
+  </div>
+</a>
 
 <script src="script.js"></script>  
 
