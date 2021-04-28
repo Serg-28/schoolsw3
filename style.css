@@ -9,14 +9,32 @@
 }
 
 /* Стили, для демонстрации различных типов границ */
-p.dotted {border-style: dotted;}
-p.dashed {border-style: dashed;}
-p.solid {border-style: solid;}
-p.double {border-style: double;}
-p.groove {border-style: groove;}
-p.ridge {border-style: ridge;}
-p.inset {border-style: inset;}
-p.outset {border-style: outset;}
-p.none {border-style: none;}
-p.hidden {border-style: hidden;}
-p.mix {border-style: dotted dashed solid double;}
+.border> p.dotted {border-style: dotted;}
+.border> p.dashed {border-style: dashed;}
+.border> p.solid {border-style: solid;}
+.border> p.double {border-style: double;}
+.border> p.groove {border-style: groove;}
+.border> p.ridge {border-style: ridge;}
+.border> p.inset {border-style: inset;}
+.border> p.outset {border-style: outset;}
+.border> p.none {border-style: none;}
+.border> p.hidden {border-style: hidden;}
+.border> p.mix {border-style: dotted dashed solid double;}
+
+/* Стили, для демонстрации различных типов контура (outline),  */
+.outline> p {
+  outline-color:red; 
+  outline-width:5px; 
+  margin-bottom: 25px;
+  /* для наглядности отличий от бордер всем элементам дополнительно установим черную границу */
+  border: 3px solid black;
+}
+
+.outline> p.dotted {outline-style: dotted;}
+.outline> p.dashed {outline-style: dashed;}
+.outline> p.solid {outline-style: solid;}
+.outline> p.double {outline-style: double;}
+.outline> p.groove {outline-style: groove;}
+.outline> p.ridge {outline-style: ridge;}
+.outline> p.inset {outline-style: inset;}
+.outline> p.outset {outline-style: outset;}
